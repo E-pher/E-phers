@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+     printf("            Hello，gdufs!∠(｀ω′*)敬礼!     \n");
+	 printf("                                                      \n");
+     printf("       222222       0000000         11         8888888\n");
+     printf("      2222222       0000000        111         8888888\n");
+	 printf("      2    22       00   00       1111         88   88\n");
+	 printf("          22        00   00         11         88   88\n");
+	 printf("          22        00   00         11         8888888\n");
+	 printf("         22         00   00         11         8888888\n");
+	 printf("         22         00   00         11         88   88\n");
+	 printf("       222          00   00         11         88   88\n");
+	 printf("      2222222       0000000         11         88   88\n");
+	 printf("      2222222       0000000        1111        8888888\n");
+	      return 0;
