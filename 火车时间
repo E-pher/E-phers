@@ -1,0 +1,16 @@
+#include<iostream>
+#include <iomanip>
+using namespace std;
+int main ()
+{
+  int start, end;
+  int hour,  minute;
+  cout<<"请输入火车的出发时间和达到时间";
+  cin>>start>>end;
+  start=start/100*60+start%100;
+  end=end/100*60+end%100;
+  hour=(end-start)/60;
+  minute=(end-start)%60;
+  cout<<setw(2)<<setfill('0')<<hour<<":"<<setw(2)<<setfill('0')<< minute<<endl;
+  return 0;
+}
