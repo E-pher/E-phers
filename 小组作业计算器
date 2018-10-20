@@ -1,0 +1,105 @@
+#include<iostream>
+#include <time.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	int ch,n,a,b,d,r;
+	char op;
+	float num1,num2,result=0;
+	while(1)
+	{
+	cout<<"     ____________________________________   " <<endl;
+	cout<<"    |      欢迎来到简易计算器             |   "<<endl;
+	cout<<"    |    提醒：请输入1、2、3、4、5或6     |   "<<endl;
+	cout<<"    |      1.加法                        |   "<<endl;
+	cout<<"    |      2.减法                        |   "<<endl;
+	cout<<"    |      3.乘法                        |   "<<endl;
+	cout<<"    |      4.除法                        |   "<<endl; 
+	cout<<"    |      5.自主计算                    |   "<<endl;
+	cout<<"    |      6.随机出题                    |   "<<endl; 
+	cout<<"     ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣    "<<endl; 
+	cin>>ch;
+		switch(ch)
+		{
+			
+			case 1:cout<<"请输入两个数字"<<endl;cin>>num1>>num2;result=num1+num2;cout<<result<<endl ;break;
+			case 2:cout<<"请输入两个数字"<<endl;cin>>num1>>num2;result=num1-num2;cout<<result<<endl ;break;	
+			case 3:cout<<"请输入两个数字"<<endl;cin>>num1>>num2;result=num1*num2;cout<<result<<endl ;break;
+			case 4:cout<<"请输入两个数字"<<endl;cin>>num1>>num2;result=num1/num2;cout<<result<<endl ;break;
+			case 5:cout<<"请输入要算的式子"<<endl;cin>>num1>>op>>num2;
+			switch(op)
+			{
+				case '+': result=num1+num2;break;
+				case '-': result=num1-num2;break;
+				case '*': result=num1*num2;break;
+				case '/': result=num1/num2;break;
+				 
+			}cout<<result<<endl ;break;
+			case 6: char e;
+			        srand(time(NULL));
+	                ff:a=rand()%101,b=rand()%101+1,e=rand()%4;
+	                switch(e){
+		                   case 0:e='+',r=a+b;break;
+		                   case 1:e='-',r=a-b;break;
+		                   case 2:e='*',r=a*b;break;
+		                   case 3:e='/',r=a/b;break;
+                     	}
+		    	   cout<<a<<e<<b<<"=?"<<endl;
+	    	       check:cin>>d;
+		           if(a==0){
+			       return 0;
+			               };
+		
+                   if(d==r){
+		           cout<<"太棒了!"<<endl;
+	               }else{
+		           cout<<"不对哦，再来一遍!"<<endl;
+		           cout<<". ◢███◣  " <<endl;
+		           cout<<"  █＞_ ＜█"<<endl;
+		           cout<<"   ╰—┰—╯"<<endl;
+		           cout<<"    ┕ █┙ "<<endl;
+		           cout<<"      ∏    "<<endl;
+	               goto check;
+	               }break;
+	        default:"无效运算符\n";
+    }
+		int i, j, k, l, m;  char c=3;
+  for (i=1; i<=5; i++)      printf("\n");
+  for (i=1; i<=3; i++)
+  {
+    for (j=1; j<=32-2*i; j++)  printf(" ");  
+    for (k=1; k<=4*i+1; k++)  printf("%c", c);
+    for (l=1; l<=13-4*i; l++)  printf(" ");
+    for (m=1; m<=4*i+1; m++)  printf("%c", c);
+    printf("\n");
+  }
+  for (i=1; i<=3; i++)
+  {
+    for (j=1; j<=24+1; j++)    printf(" ");  
+    for (k=1; k<=29; k++)    printf("%c", c);
+    printf("\n");
+  }
+  for (i=7; i>=1; i--)
+  {
+    for (j=1; j<=40-2*i; j++)  printf(" ");  
+    for (k=1; k<=4*i-1; k++)  printf("%c", c);
+    printf("\n");
+  }
+  for (i=1; i<=39; i++)      printf(" ");
+  printf("%c\n", c);
+  for (i=1; i<=4; i++)      printf("\n");
+		cout<<"是否继续计算"<<endl;
+		cout<<"1.继续"<<endl;
+		cout<<"2.退出"<<endl;
+		cin>>n;
+		switch(n)
+		{
+			case 1:break;
+			case 2:cout<<"结束运算"<<endl; return 0; 
+		}
+		
+	
+	}
+	
+}
